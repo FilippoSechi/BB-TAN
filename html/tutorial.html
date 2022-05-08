@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>BB-TAN Tutorial</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Filippo Sechi">
+        <meta name="description" content="Web game BB-TAN">
+        <link rel="stylesheet" type ="text/css" href="../css/page.css">
+        <link rel="stylesheet" type="text/css" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../css/account.css">
+    </head>
+    <body>
+        <header>BB-TAN</header>
+        <nav>
+            <div class = "navigazione"><a href = "../php/login.php">ACCEDI</a></div>   
+            <div class = "navigazione"><a href="../index.php">GIOCA</a></div>
+            <div class = "navigazione"><a href="">Tutorial</a></div>
+            <div class ="navigazione"><a href="../php/globalRanking.php">classifica</a></div>
+        </nav>
+        <div id="indice">
+            <h1>INDICE</h1>
+            <ul>
+                <li><a href="#0">SCOPO DEL GIOCO</a></li>
+                <li><a href="#1">COME SI GIOCA</a></li>
+                <li><a href="#2">FASE DI TIRO</a></li>
+                <li><a href="#3">OSTACOLI</a></li>
+                <li><a href="#4">SPECIAL LEFT-RIGHT</a></li>
+                <li><a href="#5">SPECIAL UP-DOWN</a></li>
+                <li><a href="#6">SPECIAL SPLIT</a></li>
+                <li><a href="#7">NUOVA PALLINA</a></li>
+                <li><a href="#8">PUNTEGGIO</a></li>
+                <li><a href="#9">DIFFICOLTA</a></li>
+                <li><a href="#10">ACCOUNT</a></li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id ="tutorial">
+                <p class="section" id="0">SCOPO DEL GIOCO</p>
+                <p>Lo scopo di BB-TAN è quello di raccogliere più palline possibili prima che almeno un ostacolo tocchi terra.</p>
+                <p class="section" id="1">COME SI GIOCA</p>
+                <p>Per giocare a BB-TAN dovrai, ad ogni manche, decidere una traiettoria di lancio per le tue palline.
+                    Ogni manche si conclude quando tutte le palline lanciate sono tornate a terra. Alla conclusione di ogni manche gli ostacoli presenti si sposteranno in basso e ne verranno generati
+                    altri.</p>
+                <p class="section" id="2">FASE DI TIRO</p>
+                <p>Per iniziare a mirare premi con il tasto sinistro del mouse sul campo di gioco. 
+                    Mantenendo premuto il tasto, scegli la direzione di lancio seguendo l'indicatore.
+                    Per lanciare rilascia il tasto sinistro del mouse.
+                    Se devi cancellare una fase di lancio iniziata (quando compare la freccia), sposta il mouse fuori dal campo di gioco mantenendo premuto il tasto sinistro del mouse. 
+                    <br><em>N.B.</em>: I lanci verso terra verranno annullati automaticamente.</p>
+                <p class="section" id="3">OSTACOLI</p>
+                <p>Gli ostacoli sono quadrati colorati generati ad ogni manche.Ognuno ha un valore numerico che indica la quantità di colpi necessari per eliminarlo.
+                    Ogni volta che una pallina colpisce l'ostacolo il suo valore diminuirà di 1. Una volta arrivato a 0 l'ostacolo verrà eliminato.
+                    Gli ostacoli cambiano colore in base alla quantità di colpi che devono ancora subire (più sono scuri più sono resistenti).</p>
+                <p class="section" id="4">SPECIAL LEFT-RIGHT</p>
+                <img src="../img/special_left_right.png" alt="special_left_right">
+                <p>Tra gli ostacoli può capitare di trovare una di queste palline speciali. Una volta colpita genererà un fascio di luce che colpirà tutti gli ostacoli che si trovano a destra e a sinistra.</p>
+                <p class="section" id="5">SPECIAL UP-DOWN</p>
+                <img src="../img/special_up_down.png" alt="special_up_down">
+                <p>Tra gli ostacoli può capitare di trovare una di queste palline speciali. Una volta colpita genererà un fascio di luce che colpirà tutti gli ostacoli che si trovano a sopra e sotto.</p>
+                <p class="section" id="6">SPECIAL SPLIT</p>
+                <img src="../img/special_split.png" alt="special_split">
+                <p>Tra gli ostacoli può capitare di trovare una di queste palline speciali. Quando viene colpita genera istantaneamente 3 palline che iniziano a muoversi verso l'alto.
+                    <br><em>N.B.</em>:Le palline generate dalla Special Split vengono conteggiate tra le palline totali</p>
+                <p class ="section" id="7">NUOVA PALLINA</p>
+                <img src="../img/newBall.png" alt="new_ball">
+                <p>Tra gli ostacoli può capitare di trovare una di queste palline speciali. Una volta colpita genererà una nuova pallina, incrementando il punteggio.
+                <br><em>N.B.</em>:La nuova pallina potrà essere usata solo a partire dalla manche successiva.</p>
+                <p class="section" id="8">PUNTEGGIO</p>
+                <p>Il punteggio indica il numero di palline attualmente raccolte.</p>
+                <p class="section" id="9">DIFFICOLTA'</p>
+                <p>All'inizio della partità si può selezionare la difficoltà di gioco. Con il variare della difficoltà varia la quantità di ostacoli generati e il loro valore.
+                 <br><em>N.B.</em>:Se non viene selezionata alcuna difficoltà, la partita sarà effettuata a difficoltà NORMALE.</p>
+                <p class="section" id="10">ACCOUNT</p>
+                <p>Se accedi con il tuo account potrai salvare i risultati delle partite e competere nella classifica generale
+                <br><em>N.B.</em>:Il salvataggio delle partite avviene solo se hai effettuato l'accesso con l'account</p>
+            </div>
+        </div>
+        <footer>Sviluppato da Filippo Sechi come progetto per Progettazione Web<br>
+                Ispirato all'app mobile BB-TAN di <a href="http://www.111percent.net/" target="_blank">111%</a></footer>
+    </body>
+</html>
