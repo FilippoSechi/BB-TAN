@@ -1,0 +1,59 @@
+#wrapper {
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 263px;
+    left: 563px;
+    text-align: left;
+    padding-left: 20px;
+    color: yellow;
+    border: 2px solid black;
+    padding-right: 20px;
+    font-family: fontBBTAN, Arial, sans-serif;
+}
+
+fieldset {
+    border: 0;
+    padding-top:20px;
+}
+legend{
+    text-align: center;
+    font-size: xx-large;
+}
+input {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#enter {
+    color: purple;
+    background-color: yellow;
+    border: 1px solid black;
+    width: 120px;
+    height: 33px;
+    font-size: larger;
+    font-family: fontBBTAN, Arial, sans-serif;
+    margin-left: 72px;
+    cursor: pointer;
+}
+
+#enter:hover {
+    border-width: 3px;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../img/neon.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+strong {
+    background-color: red;
+    padding: 5px 3px 5px 3px;
+}
+
+.errorField {
+    border: 2px solid red;
+}

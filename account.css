@@ -1,0 +1,137 @@
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+#menu {
+    font-family: fontBBTAN, Arial, sans-serif;
+    color: yellow;
+    text-align: center;
+    position: fixed;
+    left: 249px;
+    width: 230px;
+    height: 180px;
+    top: 453px;
+    background-color: purple;
+    border: 2px solid black;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+li {
+    margin: 20px;
+}
+
+#profImg {
+    width: 234px;
+    height: 160px;
+    position: fixed;
+    left: 248px;
+    top: 292px;
+}
+
+#request {
+    position: absolute;
+    top: 20px;
+    left: 290px;
+    width: 450px;
+}
+
+thead {
+    font-family: fontBBTAN, Arial, sans-serif;
+    color: yellow;
+    font-size: x-large;
+}
+tbody{
+    color: white;
+}
+
+img {
+    width: 120px;
+    height: 68px;
+    border: 1px black solid;
+}
+
+td{
+    text-align: center;
+    font-size: larger;
+}
+table{
+    position: absolute;
+    top: 49px;
+    width: 711px;
+}
+
+#buttons{
+    position: absolute;
+    left: 30%;
+    top: 4%;
+    width: fit-content;
+}
+button{
+    cursor: pointer;
+}
+span{
+    margin-left: 16em;
+    color: yellow;
+    font-family: fontBBTAN, Arial, sans-serif;
+}
+
+#enter {
+    color: purple;
+    background-color: yellow;
+    border: 1px solid black;
+    width: 120px;
+    height: 33px;
+    font-size: larger;
+    font-family: fontBBTAN, Arial, sans-serif;
+    margin-left: 72px;
+    cursor: pointer;
+}
+
+#enter:hover {
+    border-width: 3px;
+}
+
+fieldset{
+    border: 0;
+    text-align: left;
+    position: absolute;
+    top: 100px;
+    width: 430px;
+    font-size: larger;
+    color: yellow;
+    font-family: fontBBTAN, Arial, sans-serif;
+}
+legend{
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 25px;
+    font-family: fontBBTAN, Arial, sans-serif;
+    color: yellow;
+}
+
+input {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+form{
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    left: 350px;
+}
+
+#message{
+    width: 30px;
+    height: 30px;
+    border: 0;
+}
+
+.error {
+    border: red solid 2px;
+}

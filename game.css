@@ -1,0 +1,272 @@
+.logo {
+    font-family: fontBBTAN, Arial, sans-serif;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 89px;
+    position: absolute;
+    top: 262px;
+    left: 78px;
+    width: 300px;
+}
+
+.play {
+    position: absolute;
+    width: 153px;
+    height: 58px;
+    background-image: url('../img/playbutton.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0;
+    border: 0;
+    top: 405px;
+    left: 148px;
+}
+
+
+.option button {
+    font-family: fontBBTAN, Arial, sans-serif;
+    margin: 9px;
+    color: black;
+    background-color: #570c4a;
+    border: 2px solid #dd2781;
+    font-size: 22px;
+    opacity: 0.7;
+}
+
+.option.selected button{
+    color: yellow;
+    opacity: 1;
+}
+
+.option button:hover {
+    box-shadow: rgb(185, 3, 185) 1.2px 1.7px ;
+    color: yellow;
+}
+
+.play:hover {
+    box-shadow: rgb(185, 3, 185) 1.5px 2px ;
+}
+
+.option {
+    position: relative;
+    top: 515px;
+    display: table-cell;
+    left: 49px;
+}
+
+.ball {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 214px;
+    opacity: inherit;
+}
+
+#character {
+    background-image: url('../img/personaggio.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 140px;
+    position: absolute;
+    margin: 0;
+    border: 0;
+    z-index: 1;
+    top: 136px;
+    transition: left 0.25s;
+}
+
+#game {
+    width: 448px;
+    height: 640px;
+    background-color: black;
+    position: absolute;
+    left: 316px;
+    top: 111px;
+    border: 2px solid fuchsia;
+    user-select: none;
+    -moz-user-select: none; /*ATTENZIONE! Warning dal validatore--> necessario utilizzarlo per evitare la selezione del testo
+                                negli ostacoli durante la fase di lancio */
+}
+
+#decorationTop {
+    position: absolute;
+    left: 316px;
+    width: 451px;
+    height: 50px;
+    background-image: url('../img/bodyBackgroundTop.png');
+    margin: 0;
+    top: 60px;
+    user-select: none;
+}
+
+#decorationBottom {
+    position: absolute;
+    left: 316px;
+    top: 752px;
+    width: 451px;
+    height: 50px;
+    background-image: url('../img/bodyBackgroundBot.png');
+    margin: 0;
+    z-index: 0;
+}
+
+.obstacle {
+    opacity: inherit;
+    user-select: none;
+}
+.box {
+        width: 54px;
+        height: 35px;
+        border: solid 4px yellow;
+        background-color: black;
+        color: yellow;
+        position: absolute;
+        text-align: center;
+        margin: 0;
+        padding-top: 19px;
+}
+
+#score {
+        width: 260px;
+        height: 40px;
+        position: relative;
+        top: 9px;
+        left: 210px;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 26px;
+        font-family: fontBBTAN, Arial, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        opacity: 1;
+        text-shadow: 4px 3px 0 black;
+}
+
+#score:before {
+        content: "SCORE: ";
+}
+
+#pause_button {
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        top: -33px;
+        position: relative;
+        background-image: url('../img/pause_button.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: 1;
+        border: 0;
+        transition: all 0.1s;
+}
+
+#pause_button:hover {
+        width: 32px;
+        height: 32px;
+}
+
+#riprendi {
+    position: absolute;
+    left: 95px;
+    top: -215px;
+    font-size: 30px;
+    width: 150px;
+    height: 70px;
+    opacity: 1;
+}
+
+#arrow {
+    width: 1px;
+    height: 0px;
+    border: dashed 2px;
+    border-color: transparent transparent transparent white;
+    opacity: 1;
+    position: absolute;
+    transform-origin: 0% 0%;
+    transform: rotate(180deg);
+}
+
+.left_right {
+    background-image: url('../img/special_left_right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+}
+
+.up_down {
+    background-image: url('../img/special_up_down.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+}
+
+.split {
+    background-image: url('../img/special_split.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+}
+
+.new_ball {
+    background-image: url('../img/newBall.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+}
+
+#left_right_anim {
+    position: absolute;
+    width: 448px;
+    height: 62px;
+    left: 0px;
+    background-color: lightskyblue;
+    animation: LeftRight 0.2s infinite;
+}
+
+@keyframes LeftRight {
+    0%{
+        height: 62px;
+    }
+    50%{
+        height: 0px;
+    }
+    100%{
+        height: 62px;
+    }
+}
+
+#up_down_anim {
+    position: absolute;
+    width: 62px;
+    height: 640px;
+    top: 0px;
+    background-color: violet;
+    animation: UpDown 0.2s infinite;
+}
+
+@keyframes UpDown {
+    0%{
+        width: 62px;
+    }
+    50%{
+        width: 0px;
+    }
+    100%{
+        width: 62px;
+    }
+}
